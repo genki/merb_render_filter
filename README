@@ -1,4 +1,22 @@
 merb_render_filter
 ==================
 
-A plugin for the Merb framework that provides ...
+A plugin for the Merb framework that provides {before|after}_render filters.
+
+USAGE:
+
+In your controller,
+
+  class Posts < Application
+    before_render :set_title, :only => :show
+
+    def show(id)
+      @post = Post.get(id)
+      display @post
+    end
+
+  private
+    def set_title
+      @title = @post.title # <= you can access to @post here
+    end
+  end
