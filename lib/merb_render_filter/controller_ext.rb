@@ -19,5 +19,5 @@ class Merb::Controller
     _call_filters(_after_render_filters)
   end
   alias_method :render_without_filter, :render
-  alias_method :render, :render_with_filterend
+  alias_method :render, :render_with_filter
 end

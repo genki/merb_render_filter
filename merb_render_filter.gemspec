@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Merb plugin that provides {before|after}_render filters.}
   s.email = %q{genki@s21g.com}
   s.extra_rdoc_files = ["README", "LICENSE", "TODO"]
-  s.files = ["LICENSE", "README", "Rakefile", "TODO", "lib/merb_render_filter", "lib/merb_render_filter/controller_ext.rb", "lib/merb_render_filter/merbtasks.rb", "lib/merb_render_filter.rb", "spec/merb_render_filter_spec.rb", "spec/spec_helper.rb"]
+  s.files = ["LICENSE", "README", "Rakefile", "TODO", "lib/merb_render_filter", "lib/merb_render_filter/controller_ext.rb", "lib/merb_render_filter/merbtasks.rb", "lib/merb_render_filter.rb", "spec/fixture", "spec/fixture/app", "spec/fixture/app/controllers", "spec/fixture/app/controllers/application.rb", "spec/fixture/app/controllers/posts.rb", "spec/fixture/app/views", "spec/fixture/app/views/posts", "spec/fixture/app/views/posts/index.html.erb", "spec/fixture/config", "spec/fixture/config/router.rb", "spec/merb_render_filter_spec.rb", "spec/spec_helper.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://blog.s21g.com/genki}
   s.require_paths = ["lib"]
